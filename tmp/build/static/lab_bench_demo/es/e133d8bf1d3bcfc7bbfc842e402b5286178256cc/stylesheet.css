@@ -1,0 +1,33 @@
+@font-face{font-family:DeliciousRoman;src:url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);font-weight:400;}
+.AppTitleLabel{border-bottom-left-radius:5px 5px;border-bottom-right-radius:5px 5px;border-top-left-radius:5px 5px;border-top-right-radius:5px 5px;}
+h1.AppTitleLabel{color:#3D0;padding-left:5px;padding-right:5px;}.AppToolbarButtons{background-image:url('resources/images/btnbg.png');border-bottom-left-radius:5px 5px;border-bottom-right-radius:5px 5px;border-top-left-radius:5px 5px;border-top-right-radius:5px 5px;}
+.AppToolbarButtons p{width:32px;margin-top:4px;text-align:center;}.ArticleTitle{padding:10px!important;margin-top:5px!important;}
+h1.ArticleTitle{font-size:32px!important;font-family:DeliciousRoman;}.ContextPanelSelector-selected-border{border-style:solid!important;border-color:blue!important;border-width:2px!important;border-bottom-left-radius:10px 10px;border-bottom-right-radius:10px 10px;border-top-left-radius:10px 10px;border-top-right-radius:10px 10px;}
+.ContextPanelSelector-unselected-border{border-style:solid!important;border-color:blue!important;border-width:0!important;border-bottom-left-radius:10px 10px;border-bottom-right-radius:10px 10px;border-top-left-radius:10px 10px;border-top-right-radius:10px 10px;}
+.sc-view.sc-pane.sc-main{-webkit-user-select:none;-webkit-perspective:1000;-webkit-tap-highlight-color:rgba(0,0,0,0);background-image:-webkit-gradient(linear,0% 0,0% 100%,from(#A7B4CF),to(#D4DEF2));}
+.sc-view{z-index:2;}.fill{z-index:-2;}.widget{-webkit-transform-style:preserve-3d;-webkit-transition-property:all;-webkit-transition-duration:2s;}
+.widget.flipped{-webkit-transform:rotateY(180deg);-moz-transform:rotateY(180deg);}
+@-webkit-keyframes bounce{0%{opacity:1.0;-webkit-transform:scale(1.0) rotate(0deg);-moz-transform:rotateY(180deg);}
+50%{opacity:1.0;-webkit-transform:scale(1.0) rotate(180deg);-moz-transform:rotateY(180deg);}
+100%{opacity:1.0;-webkit-transform:scale(1.0) rotate(0deg);-moz-transform:rotateY(180deg);}
+}#sc477 img{z-index:-1;}.widget.mix{-webkit-animation-name:bounce;-webkit-animation-duration:1s;-webkit-animation-direction:alternate;-webkit-animation-timing-function:ease-in-out;-moz-animation-name:bounce;-moz-animation-duration:1s;-moz-animation-direction:alternate;-moz-animation-timing-function:ease-in-out;}
+.number{z-index:3;}.pipp{display:inline-block;border:1px dashed #000;padding:10px;background:#ffffa2;height:20px;text-decoration:none;-webkit-transition:all 1s ease;}
+.face{-webkit-border-radius:10px;-moz-border-radius:10px;border-width:2px;border-color:gray;border-style:solid;-webkit-transition-property:visibility;-webkit-transition-timing-function:linear;-webkit-transition-delay:.6s;}
+.face .sc-button-view{-webkit-box-shadow:0 2px 6px rgba(0,0,0,0.5);background-color:white;}
+.sc-button-view{z-index:3;}.front label{color:black;line-height:16px;}.front{visibility:visible;-webkit-backface-visibility:hidden;}
+.flipped .front{visibility:hidden;}.back label{color:black;line-height:16px;}.back{background-color:#4e96f9;-webkit-transform:rotateY(180deg);visibility:hidden;}
+.face.conButton{z-index:3;}.flipped .back{visibility:visible;}.image{z-index:-1;}
+.sc-theme .sc-button-view.sc-regular-size.square.active,.sc-theme .sc-button-view.sc-regular-size.square .sc-button-inner,.sc-theme .sc-button-view.sc-regular-size.square,.sc-theme .sc-button-view.sc-regular-size.square.active .sc-button-inner{background:none;}
+.sc-theme .sc-button-view.sc-regular-size.square.ttubebtn .sc-button-label{background:url('/static/lab_bench_demo/es/e133d8bf1d3bcfc7bbfc842e402b5286178256cc/resources/images/ttubebtn.png') no-repeat left top;height:100px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.active.ttubebtn .sc-button-label{background:url('/static/lab_bench_demo/es/e133d8bf1d3bcfc7bbfc842e402b5286178256cc/resources/images/ttubebtn.png') no-repeat right top;height:100px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.ttubebtn{height:100px;max-height:150px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.reload .sc-button-label{background:url('/static/lab_bench_demo/es/e133d8bf1d3bcfc7bbfc842e402b5286178256cc/resources/images/resetbtn.png') no-repeat left top;height:100px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.active.reload .sc-button-label{background:url('/static/lab_bench_demo/es/e133d8bf1d3bcfc7bbfc842e402b5286178256cc/resources/images/resetbtn.png') no-repeat right top;height:100px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.reload{height:100px;max-height:150px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.bluepipbtn .sc-button-label{background:url('/static/lab_bench_demo/es/e133d8bf1d3bcfc7bbfc842e402b5286178256cc/resources/images/pipblue_btn.png') no-repeat left top;height:100px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.active.bluepipbtn .sc-button-label{background:url('/static/lab_bench_demo/es/e133d8bf1d3bcfc7bbfc842e402b5286178256cc/resources/images/pipblue_btn.png') no-repeat right top;height:100px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.bluepipbtn{height:100px;max-height:150px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.yellowpipbtn .sc-button-label{background:url('/static/lab_bench_demo/es/e133d8bf1d3bcfc7bbfc842e402b5286178256cc/resources/images/pipyel_btn.png') no-repeat left top;height:100px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.active.yellowpipbtn .sc-button-label{background:url('/static/lab_bench_demo/es/e133d8bf1d3bcfc7bbfc842e402b5286178256cc/resources/images/pipyel_btn.png') no-repeat right top;height:100px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.yellowpipbtn{height:100px;max-height:150px;background-color:none;margin:0;}
+.sc-theme .sc-button-view.sc-regular-size.square.toolbar,.sc-theme .sc-button-view.sc-regular-size.square.active.toolbar{background-color:none;padding:5px;}

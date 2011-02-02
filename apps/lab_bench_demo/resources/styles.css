@@ -1,0 +1,354 @@
+/*@font-face {
+    font-family: DeliciousRoman;
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-weight:400;
+}*/
+
+.AppTitleLabel {
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+}
+
+
+h1.AppTitleLabel {
+	color:#33DD00;;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.AppToolbarButtons {
+	background-image:url('resources/images/btnbg.png');
+	border-bottom-left-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+}
+
+.AppToolbarButtons p {
+	width:32px;
+	margin-top:4px;
+	text-align:center;	
+}
+
+.ArticleTitle{
+	padding: 10px !important;
+	margin-top: 5px !important;
+}
+
+h1.ArticleTitle{
+	font-size: 32px !important;
+	font-family: DeliciousRoman;
+}
+
+.ContextPanelSelector-selected-border {
+	
+
+	border-style: solid !important;
+	border-color: blue !important;
+	border-width: 2px !important;
+	
+	border-bottom-left-radius: 10px 10px;
+	border-bottom-right-radius: 10px 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius: 10px 10px;
+}
+
+.ContextPanelSelector-unselected-border {
+	
+
+	border-style: solid !important;
+	border-color: blue !important;
+	border-width: 0px !important;
+	
+	border-bottom-left-radius: 10px 10px;
+	border-bottom-right-radius: 10px 10px;
+	border-top-left-radius: 10px 10px;
+	border-top-right-radius: 10px 10px;
+}
+
+.sc-theme .sc-pane.sc-main {
+    background: none !important;
+}
+
+svg {
+	z-index: 100 !important;
+}
+
+/*========================*/
+
+.sc-view.sc-pane.sc-main
+{
+	-webkit-user-select: none;
+    /* Give some depth to the card */
+	-webkit-perspective: 1000; 
+	/* Disable tap highlighting */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    /*background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A7B4CF), to(#D4DEF2));*/
+	}
+
+/* Applies 3D transform and transition effects to the card. The card has two states: regular and flipped.
+   A card is in a regular state when there is an empty transform applied to it, and otherwise in a flipped
+   state, where there is a rotational transformation applied. This class is used when the card is in the regular state.
+   The "card flipped" class is used when the card is in the flipped state. 
+*/
+.sc-view {
+	z-index:2;
+}
+
+.fill{
+	z-index:-2;
+}
+.widget 
+{	
+	/* Ensure that the card lives correctly in 3D space */
+	-webkit-transform-style: preserve-3d;
+	/* We apply this property to the card so it can smoothly flip between its sides */
+	-webkit-transition-property: all;
+	/* Make the animation occur over a period of 1.5 seconds */
+	-webkit-transition-duration: 2s;
+	
+}
+.lab-toolbar.AppToolBar{
+	
+}
+/* Applies the flip animation to the card */
+.widget.flipped 
+{
+	/* Rotate the card 180 degrees along the y-axis. This animation allows the card to
+	  toggle between its regular and flipped states. */
+	-webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);	
+	
+	
+}
+@-webkit-keyframes bounce {
+ 	0% {
+
+	   opacity: 1.0;
+	   -webkit-transform: scale(1.0) rotate(0deg);
+       -moz-transform: rotateY(180deg);
+	 }
+	 50% {
+
+	   opacity: 1.0;
+	   -webkit-transform: scale(1.0) rotate(180deg);
+       -moz-transform: rotateY(180deg);
+	 }
+	 100% {
+
+	   opacity: 1.0;
+	   -webkit-transform: scale(1.0) rotate(0deg);
+       -moz-transform: rotateY(180deg);
+	 }
+}
+
+
+ 
+#sc477 img	{
+	z-index:-1;
+}
+.widget.mix
+{
+	/* Rotate the card 180 degrees along the y-axis. This animation allows the card to
+	  toggle between its regular and flipped states. */
+	  -webkit-animation-name: bounce;
+	  -webkit-animation-duration: 1s;
+	  -webkit-animation-direction: alternate;
+	  -webkit-animation-timing-function: ease-in-out;
+	
+	  -moz-animation-name: bounce;
+	  -moz-animation-duration: 1s;
+	  -moz-animation-direction: alternate;
+	  -moz-animation-timing-function: ease-in-out;
+
+	
+}
+
+.number{
+	z-index:3;
+}
+.pipp
+{
+	/* Rotate the card 180 degrees along the y-axis. This animation allows the card to
+	  toggle between its regular and flipped states. */
+/*	position: relative;*/
+	display: inline-block;
+	border: 1px dashed #000;
+	padding: 10px;
+	background: #ffffa2;
+	height: 20px;
+/*	opacity: 0.3;*/
+	text-decoration: none;
+	-webkit-transition: all 1s ease;
+}
+
+/*.pipp:hover{
+	height: 40px;
+	opacity:1;
+	-webkit-transform: scale(1.2)  translate(50px);
+	 
+	z-index: 1000;
+
+}*/
+
+
+/* Styles the card and hides its "back side" when the card is flipped */
+.face 
+{
+    /* Give a round layout to the widget */
+	/*-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-width: 2px;
+	border-color: gray;
+	border-style: solid;*/
+	/* Drop shadow around the widget */
+   /* -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5); */
+	/* Make sure that users will not be able to select anything on the card */
+	/* We create the card by stacking two div elements at the exact same location. The back of the card 
+	   is shown when we rotated the card 180 degrees along the y-axis. Setting this property to hidden
+	   ensures that the "back side" is hidden when the card is flipped 
+	-webkit-backface-visibility: hidden; */
+	-webkit-transition-property: visibility;
+  	-webkit-transition-timing-function: linear;	
+	-webkit-transition-delay: 0.6s;	
+}
+
+.face .sc-button-view
+{
+   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+   background-color: white;
+}
+.sc-button-view
+{	z-index:3;}
+
+
+/* Styles the front of the card */
+.front label
+{
+	color: black;
+	line-height: 16px;
+}
+
+.front
+{
+	visibility: visible;
+	-webkit-backface-visibility: hidden;
+}
+
+.flipped .front 
+{
+	visibility: hidden;
+}
+
+.back label
+{
+	color: black;
+	line-height: 16px;
+}
+/* Styles the back of the card */
+.back 
+{
+	background-color: rgb(78,150,249);
+	/* Ensure the "back side" is flipped already */
+    -webkit-transform: rotateY(180deg);
+	visibility: hidden;	
+}
+.face.conButton{
+	z-index: 3;
+}
+
+.flipped .back 
+{
+	visibility: visible;
+}
+
+.image {
+	z-index: -1;
+}
+.sc-theme .sc-button-view.sc-regular-size.square.active, .sc-theme .sc-button-view.sc-regular-size.square .sc-button-inner, .sc-theme .sc-button-view.sc-regular-size.square, .sc-theme .sc-button-view.sc-regular-size.square.active .sc-button-inner {
+	background:none;
+}
+
+.sc-theme .sc-button-view.sc-regular-size.square.ttubebtn .sc-button-label { 
+	background:static_url("images/ttubebtn.png") no-repeat left top;
+	height:100px;
+	background-color:none;
+	margin:0;
+}
+.sc-theme .sc-button-view.sc-regular-size.square.active.ttubebtn .sc-button-label {
+	background:static_url("images/ttubebtn.png") no-repeat right top;
+	height:100px;
+	background-color:none;
+	margin:0;
+} 
+
+.sc-theme .sc-button-view.sc-regular-size.square.ttubebtn{
+	height:100px;
+	max-height:150px;
+	background-color:none;
+	margin:0;
+}
+.sc-theme .sc-button-view.sc-regular-size.square.reload .sc-button-label { 
+	background:static_url("images/resetbtn.png") no-repeat left top;
+	height:100px;
+	background-color:none;
+	margin:0;
+}
+.sc-theme .sc-button-view.sc-regular-size.square.active.reload .sc-button-label {
+	background:static_url("images/resetbtn.png") no-repeat right top;
+	height:100px;
+	background-color:none;
+	margin:0;
+} 
+.sc-theme .sc-button-view.sc-regular-size.square.reload{
+	height:100px;
+	max-height:150px;
+	background-color:none;
+	margin:0;
+}
+
+
+.sc-theme .sc-button-view.sc-regular-size.square.bluepipbtn .sc-button-label { 
+	background:static_url("images/pipblue_btn.png") no-repeat left top;
+	height:100px;
+	background-color:none;
+	margin:0;
+}
+.sc-theme .sc-button-view.sc-regular-size.square.active.bluepipbtn .sc-button-label {
+	background:static_url("images/pipblue_btn.png") no-repeat right top;
+	height:100px;
+	background-color:none;
+	margin:0;
+} 
+.sc-theme .sc-button-view.sc-regular-size.square.bluepipbtn{
+	height:100px;
+	max-height:150px;
+	background-color:none;
+	margin:0;
+}
+.sc-theme .sc-button-view.sc-regular-size.square.yellowpipbtn .sc-button-label { 
+	background:static_url("images/pipyel_btn.png") no-repeat left top;
+	height:100px;
+	background-color:none;
+	margin:0;
+}
+.sc-theme .sc-button-view.sc-regular-size.square.active.yellowpipbtn .sc-button-label {
+	background:static_url("images/pipyel_btn.png") no-repeat right top;
+	height:100px;
+	background-color:none;
+	margin:0;
+} 
+.sc-theme .sc-button-view.sc-regular-size.square.yellowpipbtn{
+	height:100px;
+	max-height:150px;
+	background-color:none;
+	margin:0;
+}
+.sc-theme .sc-button-view.sc-regular-size.square.toolbar, .sc-theme .sc-button-view.sc-regular-size.square.active.toolbar { 
+	background-color:none;
+	padding:5px;
+}
+
+
